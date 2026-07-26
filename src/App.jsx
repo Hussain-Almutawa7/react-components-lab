@@ -1,4 +1,5 @@
 import WeatherForcast from "./components/WeatherForecast"
+import "./App.css"
 
 const App = () => {
 
@@ -46,6 +47,11 @@ const App = () => {
       <h1>Local Weather</h1>
       <section className="weather-list">
       // Weather data here
+      {
+        weatherForecasts.map(weather => (
+          <WeatherForcast weather={weather} />
+        ))
+      }
       </section>
     </>
 
