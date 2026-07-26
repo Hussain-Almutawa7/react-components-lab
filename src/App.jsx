@@ -46,11 +46,11 @@ const App = () => {
     <>
       <h1>Local Weather</h1>
       <section className="weather-list">
-      {
-        weatherForecasts.map(weather => (
-          <WeatherForcast weather={weather} />
-        ))
-      }
+        {
+          weatherForecasts.map(weather => (
+            <WeatherForcast weather={weather} />
+          ))
+        }
       </section>
     </>
 
